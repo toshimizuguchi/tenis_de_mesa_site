@@ -1,0 +1,223 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E FONTE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ==========================================================================
+   2. NAVBAR MINIMALISTA (Estilizando sua antiga div .navbar)
+   ========================================================================== */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    position: relative;
+    transition: color 0.2s ease;
+    padding-bottom: 5px;
+}
+
+/* Efeito de linha vermelha ao passar o mouse nos links */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #dc3545;
+    transition: width 0.2s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #111111;
+}
+
+/* ==========================================================================
+   3. BANNER DE BOAS-VINDAS (.container-md3)
+   ========================================================================== */
+.container-md3 {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #111111 0%, #2b2b2b 100%);
+    color: #ffffff;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.container-md3 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container-md3 p {
+    color: #a8aeb4;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   4. VITRINE DE PRODUTOS (Layout em Grid Responsivo)
+   ========================================================================== */
+.produtos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px 20px;
+}
+
+/* Título "Produtos" */
+.produtos h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    border-left: 4px solid #dc3545;
+    padding-left: 15px;
+}
+
+/* Container dos produtos transformado em GRID de 3 colunas */
+.produtos {
+    display: block; 
+}
+
+/* Hack CSS para alinhar as divs filhas lado a lado sem mexer no HTML */
+.produtos > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Nova estrutura de Grid moderna para os Cards */
+@media (min-width: 768px) {
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+}
+
+/* Estilização unificada dos Cards (Produto Comum e Destaque) */
+.produto, .produtos.em.destaque {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #edf2f7;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover, .produtos.em.destaque:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* Títulos dos Produtos */
+.produto h3, .produtos.em.destaque h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 15px;
+    order: 1; /* Força o título a ficar no topo */
+}
+
+/* Imagens dos Produtos */
+.produto img, .produtos.em.destaque img {
+    max-height: 180px;
+    min-height: 180px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    order: 2; /* Força a imagem a ficar abaixo do título */
+}
+
+/* Descrição de texto padrão */
+.produto p, .produtos.em.destaque p {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    order: 3;
+}
+
+/* Fichas técnicas, características e blocos de desempenho */
+.caracteristicas, .desempenho, .peso-dimensao, .sensacao-controle {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #718096;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 0.8rem !important;
+    color: #4a5568 !important;
+    line-height: 1.5;
+    margin-bottom: 12px !important;
+    white-space: pre-line; /* Mantém a quebra de linhas original */
+    order: 4;
+}
+
+/* Bloco específico de Características (Borracha) */
+.caracteristicas {
+    border-left-color: #dc3545;
+}
+
+/* Preço */
+.preco {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: #111111;
+    margin-top: auto !important; /* Empurra o preço e botão para o final do card */
+    margin-bottom: 15px !important;
+    order: 5;
+}
+
+/* Botão Comprar */
+button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    order: 6;
+}
+
+button:hover {
+    background-color: #bd2130;
+}
