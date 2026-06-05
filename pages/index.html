@@ -1,69 +1,444 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spin Store</title>
+    <title>Spin Store | Equipamentos Premium de Tênis de Mesa</title>
+    <meta name="description" content="A Spin Store oferece borrachas de alta aderência, raquetes de carbono e acessórios oficiais de tênis de mesa aprovados pela ITTF. Domine a mesa com o melhor do esporte!">
+    <meta name="keywords" content="tênis de mesa, ping pong, raquete de tênis de mesa, borracha de tênis de mesa, dhs, victas, butterfly, esporte premium">
+    <meta name="author" content="Spin Store">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <div class="navbar">
-        <a href="#">Início</a>
-        <a href="#">Produtos</a>
-        <a href="#">Contato</a>
-    </div>
-    <div class="container-md3">
-        <h1>Bem-vindo a Spin Store</h1>
-        <p>Aqui você encontra os melhores materiais e acessórios de tenis de mesa do Brasil</p>
-    </div>
-    <div class="produtos">
-        <h2>Produtos</h2>
-        <div class="produtos em destaque">
-            <h3>Borracha Rxton 1</h3>
-            <img src="../imagens/borracha1.png" alt="Produto 1">
-            <p>O RXTON 1 tem uma alta taxa de tolerância a falhas e é equipado com uma estabilidade de desempenho muito forte, especialmente adequado para madeiras rígidas de cinco camadas, com ou sem fibras de carbono.</p>
-            <p class="caracteristicas">
-               Características:
-               -Velocidade: 9
-               Efeito: 9
-               Controle: 10
-               Espessura: Max 2.1mm
-               Densidade: 45° graus Hard 
-            </p>
-            <p class="preco">
-                R$ 143,00
-            </p>
-            <button>Comprar</button>
-        </div>
-        <div class="produto">
-            <h3>Bola Dhs 3 Estrelas</h3>
-            <img src="../imagens/dhs_bola.png" alt="Produto 2">
-            <p>Bolas duráveis e de alta performance para suas partidas.</p>
-            <p class="preco">R$ 50,00</p>
-            <button>Comprar</button>
-        </div>
-        <div class="produto">
-            <img src="../imagens/swat_carbon.png" alt="Produto 3">
-            <h3>Raquete Victas Swat Carbon</h3>
-            <p>A Madeira Victas Swat Carbon é ideal para jogadores que desejam uma raquete rápida e responsiva, sem sacrificar o controle e a precisão.</p>
-            <p class="preco">R$ 587,50</p>
-            <button>Comprar</button>
-            <p class="desempenho">
-                *Desempenho e velocidade:
-                Projetada para jogadores que procuram velocidade sem comprometer o controle, a Victas Swat Carbon se destaca em situações de jogo rápido e agressivo. A sua classificação de velocidade como “rápida” permite golpes poderosos e precisos, essenciais para jogadores ofensivos que gostam de pressionar seus oponentes com ataques contínuos. A sensação dura da raquete contribui para uma resposta rápida e um feedback imediato em cada batida.
-            </p>
-            <p class="peso-dimensao">
-                * Peso e dimensões:
-                Com um peso de 85g, a Victas Swat Carbon é surpreendentemente leve para uma raquete que incorpora carbono em sua construção. Isso facilita manobras rápidas e mudanças de direção, oferecendo ao jogador uma vantagem competitiva em partidas de alto nível. O tamanho da lâmina, de 158 x 150 mm, e a espessura de 6,0 mm, proporcionam uma área de contato ideal para maximizar a eficácia dos golpes, equilibrando bem entre potência e precisão.
 
-            </p>
-            <p class="sensacao-controle">
-                * Sensação e controle:
-                A dureza da sensação da Victas Swat Carbon não só aumenta a velocidade dos golpes, mas também aprimora o controle da bola. Essa combinação permite aos jogadores executar uma variedade de técnicas, desde topspins rápidos até bloqueios precisos, com confiança e consistência. A resposta da raquete é imediata, proporcionando um excelente feedback que ajuda os jogadores a ajustarem suas técnicas em tempo real.
-                
-            </p>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M6 12A6 6 0 0 1 18 12"></path>
+                    <circle cx="12" cy="7" r="1" fill="currentColor"></circle>
+                </svg>
+                SPIN<span>STORE</span>
+            </div>
+            <div class="links">
+                <a href="#" class="active">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn" aria-label="Carrinho de compras">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
         </div>
-            
-    </div>
+    </nav>
+
+    <!-- Hero / Banner Principal -->
+    <header class="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-grid-lines"></div>
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="container hero-container">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Materiais Oficiais e Homologados
+            </div>
+            <h1>Domine a mesa com o melhor do <span>Tênis de Mesa</span></h1>
+            <p>Borrachas de alta aderência, raquetes de carbono e acessórios oficiais selecionados a dedo por mesa-tenistas profissionais.</p>
+            <div class="hero-actions">
+                <a href="#produtos" class="cta-button">
+                    Ver Catálogo
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                <a href="#diferenciais" class="secondary-button">Saiba Mais</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Diferenciais (Destaque Clean) -->
+    <section id="diferenciais" class="section-diferenciais">
+        <div class="container-small">
+            <div class="section-header">
+                <h2>Por que a Spin Store?</h2>
+                <p>Nossa curadoria é feita por quem realmente respira o esporte, garantindo performance e durabilidade.</p>
+            </div>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <div class="icon-wrapper color-green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>100% Originais</h3>
+                    <p>Todos os nossos materiais são importados diretamente dos fabricantes oficiais (DHS, Victas, etc.).</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="icon-wrapper color-red">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <h3>Envio Expresso</h3>
+                    <p>Logística ágil e segura para que seu equipamento chegue a tempo do seu próximo treino ou campeonato.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="icon-wrapper color-amber">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Selos de Qualidade</h3>
+                    <p>Trabalhamos exclusivamente com materiais aprovados e catalogados pela ITTF para torneios oficiais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="section-produtos">
+        <div class="container-large">
+            <div class="section-header">
+                <span class="sub-title">Linha Profissional</span>
+                <h2>Equipamentos em Destaque</h2>
+                <p>Explore nossa seleção e encontre a combinação ideal para o seu estilo de jogo.</p>
+            </div>
+
+            <!-- Filtros de Produtos -->
+            <div class="filter-wrapper">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="borrachas">Borrachas</button>
+                    <button class="filter-btn" data-filter="raquetes">Raquetes</button>
+                    <button class="filter-btn" data-filter="bolas">Bolas</button>
+                </div>
+            </div>
+
+            <!-- Grid de Produtos -->
+            <div class="produtos-grid">
+                <!-- Produto 1 -->
+                <div class="produto-card" data-category="borrachas">
+                    <div class="card-badge bg-rose">Borracha</div>
+                    <div class="produto-image">
+                        <img src="../imagens/borracha1.png" alt="Borracha Rxton 1">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Borracha Rxton 1</h3>
+                        <p class="descricao">Alta tolerância a falhas e estabilidade excepcional para madeiras rígidas de ataque rápido.</p>
+                        
+                        <div class="specs-box">
+                            <div class="spec-row">
+                                <span class="spec-label">Velocidade</span>
+                                <div class="spec-bar-bg"><div class="spec-bar-fill" style="width: 90%; background-color: var(--brand-coral);"></div></div>
+                                <span class="spec-val">9</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Efeito</span>
+                                <div class="spec-bar-bg"><div class="spec-bar-fill" style="width: 90%; background-color: var(--brand-coral);"></div></div>
+                                <span class="spec-val">9</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Controle</span>
+                                <div class="spec-bar-bg"><div class="spec-bar-fill" style="width: 100%; background-color: var(--brand-coral);"></div></div>
+                                <span class="spec-val">10</span>
+                            </div>
+                        </div>
+
+                        <div class="price-action-wrapper">
+                            <p class="preco"><span>R$</span> 143,00</p>
+                            <button class="buy-button">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card" data-category="bolas">
+                    <div class="card-badge bg-orange">Acessório</div>
+                    <div class="produto-image">
+                        <img src="../imagens/dhs_bola.png" alt="Bola Dhs 3 Estrelas">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Bola DHS 3 Estrelas</h3>
+                        <p class="descricao">Bolas duráveis de alta performance aprovadas para competições internacionais e treinos intensivos.</p>
+                        
+                        <div class="specs-pills">
+                            <span class="pill">Padrão ITTF</span>
+                            <span class="pill">40+ mm</span>
+                            <span class="pill">Pacote c/ 6 un</span>
+                        </div>
+
+                        <div class="price-action-wrapper">
+                            <p class="preco"><span>R$</span> 50,00</p>
+                            <button class="buy-button">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-card" data-category="raquetes">
+                    <div class="card-badge bg-indigo">Raquete</div>
+                    <div class="produto-image">
+                        <img src="../imagens/swat_carbon.png" alt="Raquete Victas Swat Carbon">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Victas Swat Carbon</h3>
+                        <p class="descricao">Madeira clássica japonesa super leve (85g) com carbono para ataques extremamente rápidos e precisos.</p>
+                        
+                        <div class="specs-box">
+                            <div class="spec-row">
+                                <span class="spec-label">Velocidade</span>
+                                <div class="spec-bar-bg"><div class="spec-bar-fill" style="width: 95%; background-color: var(--brand-indigo);"></div></div>
+                                <span class="spec-val">9.5</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Controle</span>
+                                <div class="spec-bar-bg"><div class="spec-bar-fill" style="width: 85%; background-color: var(--brand-indigo);"></div></div>
+                                <span class="spec-val">8.5</span>
+                            </div>
+                        </div>
+
+                        <div class="specs-pills">
+                            <span class="pill">Ofensiva (OFF)</span>
+                            <span class="pill">5 Wood + 2 Carbon</span>
+                        </div>
+
+                        <div class="price-action-wrapper">
+                            <p class="preco"><span>R$</span> 587,50</p>
+                            <button class="buy-button">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="section-contato">
+        <div class="container-small">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Ficou com alguma dúvida?</h2>
+                    <p>Nosso time de consultoria é especializado e pode te ajudar a montar a raquete ideal para a sua empunhadura e estilo de jogo.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>suporte@spinstore.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! Entraremos em contato em breve.'); this.reset();">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" rows="4" required placeholder="Como podemos te ajudar no seu jogo?"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container-large footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <svg class="logo-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M6 12A6 6 0 0 1 18 12"></path>
+                        <circle cx="12" cy="7" r="1" fill="currentColor"></circle>
+                    </svg>
+                    SPIN<span>STORE</span>
+                </div>
+                <p>A melhor loja para o mesa-tenista exigente. Equipamentos de alto rendimento para todos os níveis de jogo.</p>
+            </div>
+            <div class="footer-links-group">
+                <h4>Navegação</h4>
+                <a href="#">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="footer-links-group">
+                <h4>Marcas Parceiras</h4>
+                <span class="partner">Victas Japan</span>
+                <span class="partner">DHS Table Tennis</span>
+                <span class="partner">Loki Sports</span>
+                <span class="partner">Butterfly (Em breve)</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Spin Store. Feito com paixão pelo esporte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de Funcionalidades Interativas -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Lógica do Filtro de Produtos com Animação
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.produto-card');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    productCards.forEach(card => {
+                        card.classList.remove('card-show', 'card-hide');
+                        const cardCategory = card.getAttribute('data-category');
+
+                        if (filterValue === 'all' || cardCategory === filterValue) {
+                            card.style.display = 'flex';
+                            setTimeout(() => {
+                                card.classList.add('card-show');
+                            }, 50);
+                        } else {
+                            card.classList.add('card-hide');
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 400); // tempo correspondente ao fade out
+                        }
+                    });
+                });
+            });
+
+            // Forçar primeira animação ao carregar
+            productCards.forEach(card => {
+                card.classList.add('card-show');
+            });
+
+            // 2. Simulação de Carrinho e Toast
+            let cartCount = 0;
+            const cartCountBadge = document.querySelector('.cart-count');
+            const buyButtons = document.querySelectorAll('.buy-button');
+
+            function showToast(message) {
+                // Remover toasts antigos para evitar sobreposição excessiva
+                const activeToasts = document.querySelectorAll('.toast');
+                activeToasts.forEach(t => {
+                    t.classList.remove('show');
+                    setTimeout(() => t.remove(), 300);
+                });
+
+                const toast = document.createElement('div');
+                toast.className = 'toast';
+                toast.innerHTML = `
+                    <svg class="toast-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>${message}</span>
+                `;
+                document.body.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.classList.add('show');
+                }, 50);
+
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                    setTimeout(() => {
+                        toast.remove();
+                    }, 300);
+                }, 3000);
+            }
+
+            buyButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const productCard = e.target.closest('.produto-card');
+                    const productName = productCard.querySelector('h3').innerText;
+
+                    cartCount++;
+                    cartCountBadge.innerText = cartCount;
+                    
+                    // Adicionar animação de pulso no contador
+                    cartCountBadge.classList.add('bounce');
+                    setTimeout(() => {
+                        cartCountBadge.classList.remove('bounce');
+                    }, 400);
+
+                    showToast(`<strong>${productName}</strong> foi adicionado ao carrinho!`);
+                });
+            });
+
+            // 3. Efeito de Scroll Suave para os Links da Navbar
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
